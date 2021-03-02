@@ -1,0 +1,7 @@
+{
+  "name": "rodc",
+  "description": "run on download completed",
+  "path": "/tmp/rodc.sh",
+  "type": "stdio",
+  "allowed_extensions": [ "rodc@example.net" ]
+}

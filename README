@@ -15,10 +15,10 @@ ZIPFILE=$(mktemp)
 EXTRDIR=$(mktemp -d)
 
 # download latest source
-wget -q --show-progress 'https://github.com/igorlogius/rodc/archive/master.zip' -O $ZIPFILE
+wget -q --show-progress 'https://github.com/igorlogius/rodc/archive/main.zip' -O $ZIPFILE
 
 # extract without paths and README and example_config.json
-unzip -j $ZIPFILE -d $EXTRDIR -x "*/README" "*/example_config.json"
+unzip -j $ZIPFILE -d $EXTRDIR -x "*/README" "*/rodc.json" "*/rodc.sh" "*/rodc.py" 
 
 # re-pack as xpi (zip) without paths and extended file attributes 
 XPI="rodc-$(grep '"version"' $EXTRDIR/manifest.json |cut -d'"' -f4)-$(date '+%F_%T').xpi" 

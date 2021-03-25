@@ -1,8 +1,5 @@
 {
-  "manifest_version": 2,
-  "name": "rodc",
-  "description": "run on download completed",
-  "version": "0.0.1",
+  "author": "igorlogius",
   "background": {
     "scripts": [
       "background.js"
@@ -11,11 +8,15 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "rodc@example.net",
-      "strict_min_version": "50.0"
+      "strict_min_version": "60.0"
     }
   },
+  "description": "run on download complete",
+  "manifest_version": 2,
+  "name": "rodc",
   "permissions": [
     "nativeMessaging",
     "downloads"
-  ]
+  ],
+  "version": "0.1.0"
 }

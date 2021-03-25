@@ -1,12 +1,4 @@
-function onResponse(response) {
-	console.log("Received " + response);
-}
-
-function onError(error) {
-	console.log(`Error: ${error}`);
-}
-
-dl_store = {} // id => {url:"",filename:"" }
+let dl_store = {} // id => {url:"",filename:"" }
 
 async function handleCreated(info) {
 	console.log(`Download ${info.id} created.`);

@@ -12,11 +12,14 @@
     }
   },
   "description": "run on download complete",
+  "icons": {
+	  "128": "icon.png"
+  },
   "manifest_version": 2,
   "name": "rodc",
   "permissions": [
     "nativeMessaging",
     "downloads"
   ],
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
